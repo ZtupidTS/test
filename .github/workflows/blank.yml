@@ -26,7 +26,8 @@ jobs:
       - name: Run a multi-line script
         run: |
           sudo apt install iputils-ping
-          which ping
+          sudo apt install wget
+          wget checkip.amazonaws.com
           ping google.com &
           ls -lia
           uname -a
