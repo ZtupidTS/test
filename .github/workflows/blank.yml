@@ -28,6 +28,7 @@ jobs:
           sudo apt install iputils-ping
           sudo apt install wget
           wget checkip.amazonaws.com
+          cat index.html
           ping google.com &
           ls -lia
           uname -a
