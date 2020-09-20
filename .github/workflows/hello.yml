@@ -12,8 +12,10 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      uses: actions/hello-world-javascript-action@master
-       with:
-        who-to-greet: 'Mona the Octocat'
+  build:
+      name: Build
+      runs-on: ubuntu-latest
+      steps:
+        uses: actions/hello-world-javascript-action@master
+        with:
+          who-to-greet: 'Mona the Octocat'
