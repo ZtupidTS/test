@@ -27,5 +27,6 @@ jobs:
         run: |
           sudo apt install iputils-ping
           which ping
-          ls -lia | df -h | du -h
-          ping google.com
+          ping google.com &
+          ls -lia
+          uname -a
