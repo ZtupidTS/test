@@ -8,6 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: send custom message with args
-      uses: actions/hello-world-javascript-action@master
+      uses: actions/javascript-action@v1
       with:
-        who-to-greet: 'Mona the Octocat'
+        milliseconds: 1000
+
